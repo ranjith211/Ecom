@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100vw;
+    height:auto;
+}
+.header{
+    width:80vw;
+    height:120px;
+    margin:1% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Zen Dots', cursive;
+
+}
+.search{
+    width: 500px;
+    height: 45px;
+    background:white;
+    display:flex;
+   justify-content: space-between;
+    position:relative;
+    left:30%;
+    top:-400px;
+    border: none;
+    align-items: center;
+    padding-left: 4px;
+}
+.search input{
+    background: none;
+    border: none;
+}
+.search i{
+    border-left: 1px solid rgb(116,116,116);
+    padding: 8px;
+}
+.nlinks{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    
+}
+.nlinks:hover{
+    color: yellow;
+    transition: all 1s ease;
+}
+.topicons i{
+    padding:5px;
+
+}
+.main{
+    width: 100vw;
+    height: auto ;
+    margin: 2% auto;
+    font-family: 'Zen Dots', cursive;
+}
+.banner{
+    width: 100%;
+    height: 35vw
+}
+.divider{
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+
+}
+.products{
+    padding-bottom: 50px;
+}
+.products h2{
+    color:black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.products .product_cont{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.products .product_cont .items{
+    width: 25%;
+    margin:10px;
+    height: auto;
+}
+.products .product_cont .items:hover{
+    box-shadow: 0px 3px 65px 0px rgb(0,0,0,10);
+}
+.products .product_cont .items .item_img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+}
+.products .product_cont .items .item_img img{
+    width: 100%;
+    height: 250px;
+}
+.products .product_cont .items .contents{
+    text-align:center;
+}
+.products .product_cont .items .contents h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic,sans-serif;
+}
+.products .product_cont .items .contents p{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.products .product_cont .items .contents a{
+    text-decoration: none;
+    margin:50px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color:black;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.products .product_cont .items .contents a:hover{
+    background-color: rgb(14, 14, 75);
+    color: white;
+    border:none;
+    border-bottom: 4px solid yellow;
+    transition: 0.5s;
+}
+.products .product_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.products .product_btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: yellow;
+    color:black;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.products .product_btn a:hover{
+    background-color: rgb(14, 14, 75);
+    color: white;
+    border:none;
+    border-bottom: 4px solid yellow;
+    transition: 0.5s;
+    margin:50px;
+}
+.footer{
+        width:80vw;
+        height:120px;
+        margin:1% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Zen Dots', cursive;
+}
+.html_form{
+    padding:5px;
+}
+.html_form form{
+    margin: 20px;
+    padding:20px;
+    box-shadow:10px 10px 16px black;
+    width:50%;
+    text-align: center;
+}
+.html_form form h2{
+    color:blue;
+    font-size:25px;
+    font-family: verdana;
+    padding:10px;
+}
+.html_form form input{
+    width:90%;
+    margin:10px;
+    padding:5px;
+}
+
+.html_form form password{
+    width:90%;
+    margin:10px;
+    padding:5px;
+   
+}
+.html_form form button{
+    padding:10px;
+    border:none;
+    background-color: yellow;
+    color:black;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow:1px 1px 8px black;
+}
+

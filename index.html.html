@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+<title>LOGIN</title>
+<link rel="stylesheet" href=".\major2.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<header class ="header">
+    <form>
+        <a href=".\major.html"></a>
+        <input type="image" name="logo" src=".\logo.jpg"alt="logo" align="right" height="100" width="100" >
+    </form>        
+    <h1 id="logo">SHOPPIFY</h1>
+        <nav class="toplinks">
+            <a href =".\major.html" class="nlinks">HOME</a>
+            <a href =".\shop.html" class="nlinks">SHOP</a>
+            <a href =".\contactus.html" class="nlinks">CONTACT US</a>
+            <a href =".\login.html" class="nlinks">LOGIN</a>
+        </nav>
+    <div class="topicons">
+    </div>
+</header>
+<main class="main">
+    <section class="top">
+        <img src=".\banner.jpg" alt="banner" class="banner">
+        <div class="search">
+            <input type ="text" width="1500" >
+            <i class="fas fa-search"></i>          
+        </div>
+    </section>
+ <br/>
+ <h3>Please login here</h3><br><br>
+ <div class="html_form">
+ <form on submit="return validation" name="submit-googlesheet" method="POST">
+        <p><strong>    Name         :   </strong>
+        <input type="text"name="username" id="username" placeholder="Mail I'd">
+        </p><br><br>
+        <span id="errorname" style="color: red;"></span>
+        <p><strong>    Password      :   </strong>   
+        <input type="password"name="password"id="password" placeholder="Password">
+        </p><br><br>
+        <span id="errorpass" style="color: red;"></span>
+        <button type="submit">SUBMIT</button>   <button type="reset">RESET</button>
+        <br>
+        <br>
+    </form>
+</div>
+
+<script type="text/javascript">
+funcion validation(){
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+    var usercheck=/^[A-Za-z]{3,30}$/;
+    var passcheck=/^[a-zA-Z0-9_.@#$%^&*()=+{[/;:'""<>~`']}]{3,8}$/;
+    if(usercheck.test(username)){
+        document.getElementById('errorname').innerHTML=" ";
+    }
+    else{
+        document.getElementById('errorname').innerHTML="Invalid Name";
+        return false;
+    }
+    if(emailcheck.test(email)){
+        document.getElementById('errorpass').innerHTML=" ";
+    }
+    else{
+        document.getElementById('errorpass').innerHTML="Invalid password";
+        return false;
+    }
+}
+</script>
+<script type="text/javascript">
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbw6T5zGTnGxlF0j37hY9YfDRIzOaMsIKGLEtvFS0wIiKaRoK4qnF8U7ZUfPefBnEEnY/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("SUCCESSFULLY LOGGED IN"))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</main>
+</body>
+</html>
